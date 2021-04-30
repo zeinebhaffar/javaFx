@@ -243,30 +243,22 @@ public class AfficherRDVController implements Initializable {
             if (x == JFileChooser.APPROVE_OPTION){
             path= j.getSelectedFile().getPath();
             }
-            
             PdfWriter.getInstance(document ,new FileOutputStream(path+"/mypdf.pdf"));
             RDVservice service = new RDVservice();
-            //PdfWriter.getInstance(document, new FileOutputStream("C:/Users/Zeineb Haffar/Desktop/projet.pdf"));
             document.open();
             Paragraph ph1 = new Paragraph("Veuillez trouver votre liste des rendez-vous \n  ");
             Paragraph ph3 = new Paragraph("Bienvenue");
             PdfPTable table = new PdfPTable(3);
             
             PdfPCell cell;
-           
-             service.readid("Salma").forEach(e
-                    -> {
+             service.readid("Salma").forEach(e -> {
                 table.addCell(e.getNom ());
-                 
 		table.setHorizontalAlignment(Element.ALIGN_CENTER);
-
                 table.addCell(String.valueOf(e.getNommed()));
-                
                 table.setHorizontalAlignment(Element.ALIGN_CENTER);
-
                 table.addCell(String.valueOf(e.getDate()));
             });
-                         document.add(ph3);
+            document.add(ph3);
             document.add(ph1);
             document.add(table);
             document.addAuthor("projet");
