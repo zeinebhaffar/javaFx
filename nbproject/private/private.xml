@@ -3,11 +3,10 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/Zeineb%20Haffar/Documents/NetBeansProjects/cnxBDsahty/src/service/RDVservice.java</file>
-            <file>file:/C:/Users/Zeineb%20Haffar/Documents/NetBeansProjects/cnxBDsahty/src/views/afficherRDV.fxml</file>
-            <file>file:/C:/Users/Zeineb%20Haffar/Documents/NetBeansProjects/cnxBDsahty/src/views/ajouterRDV.fxml</file>
             <file>file:/C:/Users/Zeineb%20Haffar/Documents/NetBeansProjects/cnxBDsahty/src/views/AfficherRDVController.java</file>
             <file>file:/C:/Users/Zeineb%20Haffar/Documents/NetBeansProjects/cnxBDsahty/src/views/AjouterRDVController.java</file>
+            <file>file:/C:/Users/Zeineb%20Haffar/Documents/NetBeansProjects/cnxBDsahty/src/utils/DataSource.java</file>
+            <file>file:/C:/Users/Zeineb%20Haffar/Documents/NetBeansProjects/cnxBDsahty/src/cnxbdsahty/MyViewController.java</file>
         </group>
     </open-files>
 </project-private>
