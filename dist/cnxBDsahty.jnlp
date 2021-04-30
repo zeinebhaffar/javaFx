@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="cnxBDsahty.jnlp">
+  <information>
+    <title>cnxBDsahty</title>
+    <vendor>Zeineb Haffar</vendor>
+    <description>null</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="cnxBDsahty.jar" size="35893" download="eager" />
+    <jar href="lib\PDFjet.jar" size="260396" download="eager" />
+    <jar href="lib\io-7.1.4.jar" size="806130" download="eager" />
+    <jar href="lib\itext-1.4.8.jar" size="1891191" download="eager" />
+    <jar href="lib\javax.mail.jar" size="659033" download="eager" />
+    <jar href="lib\jfoenix-8.0.2.jar" size="2442326" download="eager" />
+    <jar href="lib\kernel-7.1.4.jar" size="1150232" download="eager" />
+    <jar href="lib\mail.jar" size="666983" download="eager" />
+    <jar href="lib\mysql-connector-java-5.1.23-bin.jar" size="834126" download="eager" />
+    <jar href="lib\pdfa-7.1.4.jar" size="46940" download="eager" />
+    <jar href="lib\slf4j-api-1.7.13.jar" size="33088" download="eager" />
+  </resources>
+  <applet-desc  width="800" height="600" main-class="com.javafx.main.NoJavaFXFallback"  name="cnxBDsahty" >
+    <param name="requiredFXVersion" value="8.0+"/>
+  </applet-desc>
+  <jfx:javafx-desc  width="800" height="600" main-class="cnxbdsahty.CnxBDsahty"  name="cnxBDsahty" />
+  <update check="always"/>
+</jnlp>

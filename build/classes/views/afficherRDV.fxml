@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #edffff;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="views.AfficherRDVController">
+   <children>
+      <TableView fx:id="tableview" layoutX="14.0" layoutY="100.0" onMouseClicked="#getselected" prefHeight="229.0" prefWidth="580.0">
+        <columns>
+          <TableColumn fx:id="nom" prefWidth="175.0" text="nom" />
+            <TableColumn fx:id="nommed" prefWidth="204.0" text="nommed" />
+            <TableColumn fx:id="date" prefWidth="200.0" text="date" />
+        </columns>
+      </TableView>
+      <Button fx:id="btn_afficher" contentDisplay="CENTER" layoutX="562.0" layoutY="364.0" mnemonicParsing="false" onMouseClicked="#getAffiche" prefHeight="25.0" prefWidth="16.0" style="-fx-background-color: #edffff;" textFill="#0101ff" />
+      <Text fill="#27d0b4" layoutX="146.0" layoutY="50.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Liste des rendez-vous" textAlignment="CENTER">
+         <font>
+            <Font name="Bodoni MT Black Italic" size="27.0" />
+         </font>
+      </Text>
+      <Button fx:id="btn_supprimer" layoutX="422.0" layoutY="335.0" mnemonicParsing="false" onAction="#delete" style="-fx-background-color: #5CF8F9;" text="Supprimer" />
+      <Button fx:id="btn_modifier" layoutX="422.0" layoutY="365.0" mnemonicParsing="false" onAction="#edit" prefHeight="25.0" prefWidth="72.0" style="-fx-background-color: #5CF8F9;" text="Modifier" />
+      <TextField fx:id="textid" layoutX="29.0" layoutY="335.0" />
+      <TextField fx:id="textnom" layoutX="29.0" layoutY="364.0" />
+      <Button fx:id="btn_rechercher" layoutX="346.0" layoutY="67.0" mnemonicParsing="false" onAction="#readmy" text="Rechercher" />
+      <TextField fx:id="chercher" layoutX="197.0" layoutY="67.0" promptText="chercher" />
+      <Button fx:id="actualiser" layoutX="38.0" layoutY="29.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="72.0" style="-fx-background-color: #00ffb7;" text="actualiser" />
+      <Button fx:id="retour" layoutX="38.0" layoutY="61.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="72.0" style="-fx-background-color: #00ffb7;" text="retour" />
+      <Button fx:id="Trie" layoutX="229.0" layoutY="365.0" mnemonicParsing="false" onAction="#trie" prefHeight="25.0" prefWidth="142.0" text="Trier les rendez-vous" textFill="#4e00cd" />
+      <Button fx:id="pdf" layoutX="229.0" layoutY="335.0" mnemonicParsing="false" onAction="#mypdf" prefHeight="25.0" prefWidth="142.0" text="Générer pdf" textFill="#3a05cd" />
+   </children>
+</AnchorPane>
